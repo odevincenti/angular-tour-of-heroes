@@ -1,12 +1,22 @@
 /* AppComponent's private CSS styles */
 h1 {
   margin-bottom: 0;
+  text-align: center;
 }
-nav a {
-  padding: 1rem;
-  text-decoration: none;
+
+.btn-group-horizontal nav a {
+  padding: 10px 14px 14px 10px; /* Some padding top right bottom left */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 40%; /* Set a width if needed */
+  text-align: center;
+  justify-content: space-around;
+  display: inline-flex; /* Make the buttons appear next to each other */
   margin-top: 10px;
-  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: bold;
   background-color: #e8e8e8;
   color: #3d3d3d;
   border-radius: 4px;
@@ -16,6 +26,7 @@ nav a:hover {
   color: white;
   background-color: #42545c;
 }
+
 nav a:active {
   background-color: black;
 }
