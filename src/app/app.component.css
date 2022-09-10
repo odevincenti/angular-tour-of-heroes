@@ -1,20 +1,26 @@
 /* AppComponent's private CSS styles */
 h1 {
-  margin-bottom: 0;
+  margin-bottom: 10;
   text-align: center;
 }
 
+.btn-group-horizontal {
+  display: flex;
+}
+
+.btn-group-horizontal nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  column-gap: 15px;
+}
+
 .btn-group-horizontal nav a {
+  flex-basis: 0;
+  flex-grow: 1;
   padding: 10px 14px 14px 10px; /* Some padding top right bottom left */
   cursor: pointer; /* Pointer/hand icon */
-  width: 40%; /* Set a width if needed */
-  text-align: center;
-  justify-content: space-around;
-  display: inline-flex; /* Make the buttons appear next to each other */
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  margin-left: 5px;
+  text-align: center; /* Make the buttons appear next to each other */
   text-decoration: none;
   font-weight: bold;
   background-color: #e8e8e8;
@@ -22,11 +28,11 @@ h1 {
   border-radius: 4px;
 }
 
-nav a:hover {
-  color: white;
+.btn-group-horizontal nav a:hover {
   background-color: #42545c;
+  color: white;
 }
 
-nav a:active {
+.btn-group-horizontal nav a:active {
   background-color: black;
 }
